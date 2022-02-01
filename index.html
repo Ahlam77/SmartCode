@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Smart Code Academy</title>
+</head>
+
+<body>
+
+  <!----- Main Menu-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/image/smart.png" alt="" width="70"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 align-items-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">HTML5</a></li>
+                <li><a class="dropdown-item" href="#">CSS</a></li>
+                <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+                <li><a class="dropdown-item" href="#">React</a></li>
+              </ul>
+            </li>
+            <li class="nav-item flex-ato">
+              <form class="d-flex">
+                <input class="form-control rounded-pill" type="search" placeholder="Search" aria-label="Search">
+
+              </form>
+            </li>
+            <li class="nav-item">
+
+            <li class="nav-item">
+              <a href="#" class="nav-link "><i class="bi bi-cart3"></i></i></a>
+
+            <li class="nav-item">
+              <a class="nav-link "><button type="button" class="btn btn-outline-light">Log in</button></a>
+            <li class="nav-item">
+              <a class="nav-link "><button type="button" class="btn btn-outline-light">Sign up</button></a>
+            <li class="nav-item">
+              <a class="nav-link "><i class="bi bi-globe3"></i></a>
+            </li>
+            </li>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!----Hero Section-->
+  <div class="container">
+    <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+
+          <div> <img hight="200" width="1300" src="assets/image/1.png"></img></div>
+        </div>
+        <div class="carousel-item">
+          <div><video hight="200" width="1300" controls>
+              <source src="assets/image/code.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video></div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev header-carousel-button" type="button" data-bs-target="#header-carousel"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+
+      </button>
+      <button class="carousel-control-next header-carousel-button" type="button" data-bs-target="#header-carousel"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon  " aria-hidden="true"></span>
+
+      </button>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+
+      <h3>تعلم البرمجة مجاناً</h3>
+      <p>سمارت كود هي أكاديميه مختصه بتدريس علوم الكمبيوتر والبرمجه وظيفتنا نقدملك كورسات مجالات البرمجه ونؤهلك لسوق
+        العمل عشان تعرف تلاقي فرصة عمل <br> اهلا وسهلا بيك في عائله سمارت كود
+
+      </p>
+      <div class="featured-courses">
+        <ul class="nav nav-tabs" id="featured-courses-tabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="html-tab" data-bs-toggle="tab" data-bs-target="#html" data-tab="html"
+              type="button" role="tab" aria-controls="html" aria-selected="true">HTML</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" text-dark id="css-tab" data-bs-toggle="tab" data-bs-target="#css" data-tab="css"
+              type="button" role="tab" aria-controls="css" aria-selected="false">CSS</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" text-dark id="javaScript-tab" data-bs-toggle="tab" data-bs-target="#javaScript"
+              data-tab="javaScript" type="button" role="tab" aria-controls="javaScript"
+              aria-selected="false">JavaScript</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" text-dark id="bootstrap-tab" data-bs-toggle="tab" data-bs-target="#bootstrap"
+              data-tab="bootstrap" type="button" role="tab" aria-controls="bootstrap"
+              aria-selected="false">Bootstrap</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" text-dark id="react-tab" data-bs-toggle="tab" data-bs-target="#react"
+              data-tab="react" type="button" role="tab" aria-controls="react" aria-selected="false">React</button>
+          </li>
+        </ul>
+
+<!--courses---->
+        <div class="tab-content" id="featured-courses-Content">
+          <div class="tab-pane fade show active" id="html" role="tabpanel" aria-labelledby="html-tab">
+            <div class="tab-pane-content">
+              <p class="h2">Pane Title</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus nisi sint, architecto fugiat
+              </p>
+              <button type="button" class="btn btn-outline-dark">Dark</button>
+            </div>
+
+            <div class="carousel-cards">
+              <div id="featured-courses-html" class="featured-courses-html carousel slide carousel-fade"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+
+                  <div class="carousel-item active">
+                    <div class="col-md-3">
+                      <div class="course-card">
+                        <div class="course-image">
+                          <img src="assets/image/courses/html.png">
+                        </div>
+                        <div class="course-body">
+                          <span class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto, vero?</span>
+                          <span class="course-teache">Ahmed Belal</span>
+                          <span class="course-rating">
+                            <span class="course-rating-number">3.6</span>
+                            <span class="course-rating-stars"> <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i></span>
+                            <span class="course-rating-total">xxx</span>
+                          </span>
+                          <span class="course-price">Free</span>
+                          <span class="course-bestesllet">Bestseller</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="col-md-3">
+                      <div class="course-card">
+                        <div class="course-image">
+                          <img src="assets/image/courses/html.png">
+                        </div>
+                        <div class="course-body">
+                          <span class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto, vero?</span>
+                          <span class="course-teache">Ahmed Belal</span>
+                          <span class="course-rating">
+                            <span class="course-rating-number">3.6</span>
+                            <span class="course-rating-stars"> <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i></span>
+                            <span class="course-rating-total">xxx</span>
+                          </span>
+                          <span class="course-price">Free</span>
+                          <span class="course-bestesllet">Bestseller</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="col-md-3">
+                      <div class="course-card">
+                        <div class="course-image">
+                          <img src="assets/image/courses/html.png">
+                        </div>
+                        <div class="course-body">
+                          <span class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto, vero?</span>
+                          <span class="course-teache">Ahmed Belal</span>
+                          <span class="course-rating">
+                            <span class="course-rating-number">3.6</span>
+                            <span class="course-rating-stars"> <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i></span>
+                            <span class="course-rating-total">xxx</span>
+                          </span>
+                          <span class="course-price">Free</span>
+                          <span class="course-bestesllet">Bestseller</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-md-3">
+                      <div class="course-card">
+                        <div class="course-image">
+                          <img src="assets/image/courses/html.png">
+                        </div>
+                        <div class="course-body">
+                          <span class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto, vero?</span>
+                          <span class="course-teache">Ahmed Belal</span>
+                          <span class="course-rating">
+                            <span class="course-rating-number">3.6</span>
+                            <span class="course-rating-stars">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i>
+                            </span>
+                            <span class="course-rating-total">(51,291)</span>
+                          </span>
+                          <span class="course-price">Free</span>
+                          <span class="course-bestesllet">Bestseller</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#featured-courses-html"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#featured-courses-html"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="tab-pane fade" id="css" role="tabpanel" aria-labelledby="css-tab">
+            <div class="tab-pane-content">
+              <p class="h2">Pane Title</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+              <button type="button" class="btn btn-outline-dark">Dark</button>
+            </div>
+            <div class="carousel-cards">
+              <div id="featured-courses-css" class="featured-courses-css carousel slide carousel-fade"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+
+                  <div class="carousel-item active">
+                    <div class="col-md-3">
+                      <div class="course-card">
+                        <div class="course-image">
+                          <img src="assets/image/courses/html.png">
+                        </div>
+                        <div class="course-body">
+                          <span class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto, vero?</span>
+                          <span class="course-teache">Ahmed Belal</span>
+                          <span class="course-rating">
+                            <span class="course-rating-number">3.6</span>
+                            <span class="course-rating-stars"> <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i></span>
+                            <span class="course-rating-total">xxx</span>
+                          </span>
+                          <span class="course-price">Free</span>
+                          <span class="course-bestesllet">Bestseller</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="col-md-3">
+                      <div class="course-card">
+                        <div class="course-image">
+                          <img src="assets/image/courses/html.png">
+                        </div>
+                        <div class="course-body">
+                          <span class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto, vero?</span>
+                          <span class="course-teache">Ahmed Belal</span>
+                          <span class="course-rating">
+                            <span class="course-rating-number">3.6</span>
+                            <span class="course-rating-stars"> <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i></span>
+                            <span class="course-rating-total">xxx</span>
+                          </span>
+                          <span class="course-price">Free</span>
+                          <span class="course-bestesllet">Bestseller</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="col-md-3">
+                      <div class="course-card">
+                        <div class="course-image">
+                          <img src="assets/image/courses/html.png">
+                        </div>
+                        <div class="course-body">
+                          <span class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto, vero?</span>
+                          <span class="course-teache">Ahmed Belal</span>
+                          <span class="course-rating">
+                            <span class="course-rating-number">3.6</span>
+                            <span class="course-rating-stars"> <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i></span>
+                            <span class="course-rating-total">xxx</span>
+                          </span>
+                          <span class="course-price">Free</span>
+                          <span class="course-bestesllet">Bestseller</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-md-3">
+                      <div class="course-card">
+                        <div class="course-image">
+                          <img src="assets/image/courses/html.png">
+                        </div>
+                        <div class="course-body">
+                          <span class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto, vero?</span>
+                          <span class="course-teache">Ahmed Belal</span>
+                          <span class="course-rating">
+                            <span class="course-rating-number">3.6</span>
+                            <span class="course-rating-stars">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i>
+                            </span>
+                            <span class="course-rating-total">(51,291)</span>
+                          </span>
+                          <span class="course-price">Free</span>
+                          <span class="course-bestesllet">Bestseller</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#featured-courses-css"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#featured-courses-css"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="tab-pane fade" id="javaScript" role="tabpanel" aria-labelledby="javaScript-tab">
+            <div class="tab-pane-content">
+              <p class="h2">Pane Title</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+              <button type="button" class="btn btn-outline-dark">Dark</button>
+            </div>
+            <div class="carousel-cards">
+              <div id="featured-courses-javaScript" class="featured-courses-javaScript carousel slide carousel-fade"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="col-md-3">
+                      <div class="course-card">
+                        <div class="course-image">
+                          <img src="assets/image/courses/html.png">
+                        </div>
+                        <div class="course-body">
+                          <span class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto, vero?</span>
+                          <span class="course-teache">Ahmed Belal</span>
+                          <span class="course-rating">
+                            <span class="course-rating-number">3.6</span>
+                            <span class="course-rating-stars"> <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i></span>
+                            <span class="course-rating-total">xxx</span>
+                          </span>
+                          <span class="course-price">Free</span>
+                          <span class="course-bestesllet">Bestseller</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="col-md-3">
+                      <div class="course-card">
+                        <div class="course-image">
+                          <img src="assets/image/courses/html.png">
+                        </div>
+                        <div class="course-body">
+                          <span class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto, vero?</span>
+                          <span class="course-teache">Ahmed Belal</span>
+                          <span class="course-rating">
+                            <span class="course-rating-number">3.6</span>
+                            <span class="course-rating-stars"> <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i></span>
+                            <span class="course-rating-total">xxx</span>
+                          </span>
+                          <span class="course-price">Free</span>
+                          <span class="course-bestesllet">Bestseller</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="col-md-3">
+                      <div class="course-card">
+                        <div class="course-image">
+                          <img src="assets/image/courses/html.png">
+                        </div>
+                        <div class="course-body">
+                          <span class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto, vero?</span>
+                          <span class="course-teache">Ahmed Belal</span>
+                          <span class="course-rating">
+                            <span class="course-rating-number">3.6</span>
+                            <span class="course-rating-stars"> <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i></span>
+                            <span class="course-rating-total">xxx</span>
+                          </span>
+                          <span class="course-price">Free</span>
+                          <span class="course-bestesllet">Bestseller</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-md-3">
+                      <div class="course-card">
+                        <div class="course-image">
+                          <img src="assets/image/courses/html.png">
+                        </div>
+                        <div class="course-body">
+                          <span class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto, vero?</span>
+                          <span class="course-teache">Ahmed Belal</span>
+                          <span class="course-rating">
+                            <span class="course-rating-number">3.6</span>
+                            <span class="course-rating-stars">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i>
+                            </span>
+                            <span class="course-rating-total">(51,291)</span>
+                          </span>
+                          <span class="course-price">Free</span>
+                          <span class="course-bestesllet">Bestseller</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#featured-courses-javaScript"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#featured-courses-javaScript"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="bootstrap" role="tabpanel" aria-labelledby="bootstrap-tab">
+            <div class="tab-pane-content">
+              <p class="h2">Pane Title</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+              <button type="button" class="btn btn-outline-dark">Dark</button>
+            </div>
+            <div class="carousel-cards">
+              <div id="featured-courses-bootstrap" class="featured-courses-bootstrap carousel slide carousel-fade"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="col-md-3">
+                      <div class="course-card">
+                        <div class="course-image">
+                          <img src="assets/image/courses/html.png">
+                        </div>
+                        <div class="course-body">
+                          <span class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto, vero?</span>
+                          <span class="course-teache">Ahmed Belal</span>
+                          <span class="course-rating">
+                            <span class="course-rating-number">3.6</span>
+                            <span class="course-rating-stars"> <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i></span>
+                            <span class="course-rating-total">xxx</span>
+                          </span>
+                          <span class="course-price">Free</span>
+                          <span class="course-bestesllet">Bestseller</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="col-md-3">
+                      <div class="course-card">
+                        <div class="course-image">
+                          <img src="assets/image/courses/html.png">
+                        </div>
+                        <div class="course-body">
+                          <span class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto, vero?</span>
+                          <span class="course-teache">Ahmed Belal</span>
+                          <span class="course-rating">
+                            <span class="course-rating-number">3.6</span>
+                            <span class="course-rating-stars"> <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i></span>
+                            <span class="course-rating-total">xxx</span>
+                          </span>
+                          <span class="course-price">Free</span>
+                          <span class="course-bestesllet">Bestseller</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="col-md-3">
+                      <div class="course-card">
+                        <div class="course-image">
+                          <img src="assets/image/courses/html.png">
+                        </div>
+                        <div class="course-body">
+                          <span class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto, vero?</span>
+                          <span class="course-teache">Ahmed Belal</span>
+                          <span class="course-rating">
+                            <span class="course-rating-number">3.6</span>
+                            <span class="course-rating-stars"> <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i></span>
+                            <span class="course-rating-total">xxx</span>
+                          </span>
+                          <span class="course-price">Free</span>
+                          <span class="course-bestesllet">Bestseller</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-md-3">
+                      <div class="course-card">
+                        <div class="course-image">
+                          <img src="assets/image/courses/html.png">
+                        </div>
+                        <div class="course-body">
+                          <span class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto, vero?</span>
+                          <span class="course-teache">Ahmed Belal</span>
+                          <span class="course-rating">
+                            <span class="course-rating-number">3.6</span>
+                            <span class="course-rating-stars">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i>
+                            </span>
+                            <span class="course-rating-total">(51,291)</span>
+                          </span>
+                          <span class="course-price">Free</span>
+                          <span class="course-bestesllet">Bestseller</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#featured-courses-bootstrap"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#featured-courses-bootstrap"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="react" role="tabpanel" aria-labelledby="react-tab">
+            <div class="tab-pane-content">
+              <p class="h2">Pane Title</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+              <button type="button" class="btn btn-outline-dark">Dark</button>
+            </div>
+            <div class="carousel-cards">
+              <div id="featured-courses-react" class="featured-courses-react carousel slide carousel-fade"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+         <div class="col-md-3">
+                      <div class="course-card">
+                        <div class="course-image">
+                          <img src="assets/image/courses/html.png">
+                        </div>
+                        <div class="course-body">
+                          <span class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto, vero?</span>
+                          <span class="course-teache">Ahmed Belal</span>
+                          <span class="course-rating">
+                            <span class="course-rating-number">3.6</span>
+                            <span class="course-rating-stars"> <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i></span>
+                            <span class="course-rating-total">xxx</span>
+                          </span>
+                          <span class="course-price">Free</span>
+                          <span class="course-bestesllet">Bestseller</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="col-md-3">
+                      <div class="course-card">
+                        <div class="course-image">
+                          <img src="assets/image/courses/html.png">
+                        </div>
+                        <div class="course-body">
+                          <span class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto, vero?</span>
+                          <span class="course-teache">Ahmed Belal</span>
+                          <span class="course-rating">
+                            <span class="course-rating-number">3.6</span>
+                            <span class="course-rating-stars"> <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i></span>
+                            <span class="course-rating-total">xxx</span>
+                          </span>
+                          <span class="course-price">Free</span>
+                          <span class="course-bestesllet">Bestseller</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="col-md-3">
+                      <div class="course-card">
+                        <div class="course-image">
+                          <img src="assets/image/courses/html.png">
+                        </div>
+                        <div class="course-body">
+                          <span class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto, vero?</span>
+                          <span class="course-teache">Ahmed Belal</span>
+                          <span class="course-rating">
+                            <span class="course-rating-number">3.6</span>
+                            <span class="course-rating-stars"> <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i></span>
+                            <span class="course-rating-total">xxx</span>
+                          </span>
+                          <span class="course-price">Free</span>
+                          <span class="course-bestesllet">Bestseller</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-md-3">
+                      <div class="course-card">
+                        <div class="course-image">
+                          <img src="assets/image/courses/html.png">
+                        </div>
+                        <div class="course-body">
+                          <span class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto, vero?</span>
+                          <span class="course-teache">Ahmed Belal</span>
+                          <span class="course-rating">
+                            <span class="course-rating-number">3.6</span>
+                            <span class="course-rating-stars">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                              <i class="bi bi-star"></i>
+                            </span>
+                            <span class="course-rating-total">(51,291)</span>
+                          </span>
+                          <span class="course-price">Free</span>
+                          <span class="course-bestesllet">Bestseller</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#featured-courses-react"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#featured-courses-react"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+  </section>
+<!----->
+
+
+
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
