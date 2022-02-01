@@ -36,8 +36,8 @@
 }
 .course-image {
     border : 1px solid rgba($color: #000000, $alpha: 0.15);
-& > img {
-    width: 100%;
+&>img {
+    width: 250%;
 }
 }
 

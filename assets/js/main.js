@@ -6,16 +6,16 @@ tabs.map((tab) => {
     let courses = document.querySelectorAll(selector);
 
     courses.forEach((el) => {
-      const minPerSlide = 4;
+      const minPerSlide = 4
       let next = el.nextElementSibling;
       for (var i = 1; i < minPerSlide; i++) {
         if (!next) {
-          next = courses[0];
+          next = courses[0]
         }
-        let cloneChild = next.cloneNode(true);
-        el.appendChild(cloneChild.children[0]);
-        next = next.nextElementSibling;
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
       }
-    });
-  });
-});
+    })
+  })
+})
